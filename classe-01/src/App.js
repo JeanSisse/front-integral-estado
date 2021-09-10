@@ -16,7 +16,7 @@ function AlertCard({ type, message, children}) {
 
   return (
     <div className={`card ${visibilidade}`}>
-      <img src={close} alt="fechar" className="close-button" />
+      <img onClick={esconderAlerta} src={close} alt="fechar" className="close-button" />
       <img 
         className="icon" 
         src={type === "cookie" ? cookie : alert}
